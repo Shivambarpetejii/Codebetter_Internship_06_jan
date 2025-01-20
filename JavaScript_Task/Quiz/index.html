@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Quiz App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="home-screen" class="text-center">
+      <h1>Welcome to the Quiz</h1>
+      <button id="start-btn" class="btn btn-primary mt-3">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="d-none">
+      <div id="question-container" class="mb-3">
+        <h3 id="question"></h3>
+      </div>
+      <div id="options-container" class="mb-3"></div>
+      <button id="next-btn" class="btn btn-success d-none">Next</button>
+    </div>
+
+    <div id="result-screen" class="d-none text-center">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button id="reset-btn" class="btn btn-primary mt-3">Retake Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
